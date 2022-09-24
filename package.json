@@ -1,0 +1,70 @@
+{
+  "name": "langojango",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@cloudflare/stream-react": "^0.1.5",
+    "@cloudflare/wrangler": "^1.11.0",
+    "@openfonts/noto-sans-jp_japanese": "^1.44.4",
+    "algoliasearch": "^4.4.0",
+    "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "gatsby": "^2.19.45",
+    "gatsby-image": "^2.2.44",
+    "gatsby-plugin-algolia": "^0.11.2",
+    "gatsby-plugin-htaccess": "^1.4.0",
+    "gatsby-plugin-html-attributes": "^1.0.5",
+    "gatsby-plugin-manifest": "^2.2.48",
+    "gatsby-plugin-next-seo": "^1.6.1",
+    "gatsby-plugin-offline": "^3.2.25",
+    "gatsby-plugin-plausible": "^0.0.6",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-robots-txt": "^1.5.2",
+    "gatsby-plugin-sass": "^2.2.1",
+    "gatsby-plugin-sharp": "^2.4.13",
+    "gatsby-plugin-sitemap": "^2.4.12",
+    "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-transformer-remark": "^2.8.28",
+    "gatsby-transformer-sharp": "^2.3.19",
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-accessible-accordion": "^3.3.3",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-helmet-async": "^1.0.6",
+    "react-instantsearch": "^6.7.0",
+    "react-instantsearch-dom": "^6.7.0",
+    "sans-serif": "^1.0.0",
+    "typeface-noto-sans": "^0.0.72"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fullstackph/langojango"
+  },
+  "bugs": {
+    "url": "https://github.com/fullstackph/langojango/issues"
+  }
+}

@@ -1,0 +1,263 @@
+.section-product {
+  padding: 98px 0 111px;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image-wrapper {
+    width: 59%;
+  }
+
+  .text-wrapper {
+    padding-right: 44px;
+    width: 41%;
+  }
+
+  .background {
+    position: relative;
+    
+    margin-bottom: 104px;
+    width: 559px;
+    height: 506px;
+    background-image: url('../assets/images/illustration2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .book-holder {
+    // position: absolute;
+    // top: 117px;
+    // right: -126px;
+
+    position: relative;
+    top: 117px;
+    left: 338px;
+
+    display: inline-block;
+
+    border: 28px solid $light-gray;
+  }
+
+  .product-title {
+    margin-top: 34px;
+    color: $indigo;
+  }
+
+  .product-description {
+    margin-top: 9px;
+    height: 260px;
+    overflow: hidden;
+
+    color: $gray;
+
+    &.show {
+      margin-top: 22px;
+      height: auto;
+      overflow: initial;
+    }
+  }
+
+  .title-detail {
+    font-weight: 600;
+  }
+
+  .product-additional-details {
+    margin-top: 23px;
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  .desc {
+    margin: 13px 0;
+
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .view-more {
+    margin-top: 22px;
+    cursor: pointer;
+    
+    color: $black;
+    font-weight: 500;
+
+    &:after {
+      content: '';
+      
+      position: relative;
+      top: 8px;
+      left: 10px;
+
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      
+      background-image: url('../assets/svg/arrow-right.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  .icon-item svg {
+    width: 62px;
+    height: 63px;
+  }
+}
+
+@include respond-to(xl) {
+  .section-product {
+    .container {
+      margin: 0;
+      padding: 0 15px 0 0;
+      max-width: 1456px;
+    }
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .section-product {
+    .container {
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .section-product {
+    padding: 0 0 25px;
+
+    .container {
+      padding: 0;
+    }
+
+    .image-wrapper {
+      display: flex;
+      // justify-content: center;
+      margin-bottom: 137px;
+      width: 100%;
+    }
+
+    .text-wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+    }
+
+    .icon-wrapper {
+      position: absolute;
+      top: 162px;
+      right: 43px;  
+      
+      flex-direction: column;
+      width: 65px;
+    }
+
+    .image-wrapper {
+      margin-bottom: 0;
+    }
+
+    .product-description {
+      height: 225px;
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .section-product {
+    .container {
+      padding: 0;
+    }
+
+    .text-wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .product-title {
+      margin-top: 25px;
+    }
+
+    .desc {
+      margin: 13px 0;
+      line-height: 23px;
+    }
+    
+    .product-description {
+      height: 236px;
+    }
+
+    .background {
+      width: 217px;
+      height: 209px;
+
+      background-image: url('../assets/images/illustration2-mobile.png');
+    }
+
+    .book-holder {
+      top: 43px;
+      left: 96px;
+
+      border: 15px solid #f5f5fa;
+    }
+
+    .book-details {
+      padding: 0 14px 21px;
+    }
+
+    .icon-wrapper {
+      top: 140px;
+      right: 23px;
+      width: 37px;
+    }
+
+    .icon-item {
+      margin-bottom: 5px;
+      
+      svg {
+        width: 39px;
+      }
+    } 
+
+    .view-more {
+      margin-top: 7px;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .section-product .icon-wrapper {
+    top: 75px;
+  }
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+  .section-product {
+    .image-wrapper {
+      width: 40%;
+    }
+
+    .text-wrapper {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width:345px) {
+  .section-product {
+    .background {
+      width: 193px;
+      height: 186px;
+    }
+
+    .book-holder {
+      top: 27px;
+      left: 74px;
+    }
+  }
+}

@@ -1,0 +1,164 @@
+.phrasebook-layout {
+    padding-top: 160px;
+
+    .video-holder {
+        div {
+            position: relative;
+
+            padding-top: 56.3%;
+
+            stream {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .icon-layout {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+
+        path {
+            fill: $white;
+            stroke: $white;
+        }
+    }
+
+    .icon-wrapper {
+        width: auto;
+        margin: 0 auto;
+        display: block;
+        justify-content: center;
+    }
+
+    .heading-md {
+        width: 500px;
+        max-width: 100%;
+        margin-bottom: 22px;
+
+        color: $indigo;
+    }
+
+    .text-md {
+        margin-bottom: 11px;
+        opacity: 0.8;
+        
+        color: $black-pearl;
+    }
+
+    .phrasebook-content {
+        width: 49%;
+
+        .wrapper {
+            margin-left: auto;
+            max-width: 510px;
+        }
+    }
+}
+
+.phrasebook-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// @media screen and (max-width: 1400px) and (min-width: 1200px) {
+//     .phrasebook-layout {
+//         .video-holder {
+//             stream,
+//             div {
+//                 width: 500px !important;
+//                 height: 450px !important;
+//                 object-fit: cover;
+//             }
+//         }
+
+//         .phrasebook-content {
+//             &:last-child {
+//                 padding-left: 105px;
+//                 padding-right: 90px;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 1600px) {
+//     .phrasebook-flex {
+//         margin-left: unset;
+//         padding-left: 0;
+//     }
+// }
+
+@include respond-to(xl) {
+    .phrasebook-layout {
+        .container {
+            max-width: 1398px;
+        }
+    }
+}
+
+// @include respond-to(lg) {
+//     .phrasebook-layout {
+//         .video-holder {
+//             stream,
+//             div {
+//                 width: 425px !important;
+//                 height: 350px !important;
+//                 object-fit: cover;
+//             }
+//         }
+
+//         .phrasebook-content {
+//             &:last-child {
+//                 padding-left: 50px;
+//             }
+//         }
+//     }
+// }
+
+@include respond-to(md-down) {
+    .phrasebook-layout {
+        padding-top: 120px;
+
+        .phrasebook-content {
+            width: 100%;
+            max-width: 700px;
+
+            &:first-child {
+                order: 2;
+            }
+
+            &:last-child {
+                padding-bottom: 60px;
+                order: 1;
+            }
+
+            .wrapper {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .phrasebook-flex {
+        justify-content: center;
+    }
+}
+
+@include respond-to(sm-down) {
+    .phrasebook-layout {
+        padding-top: 80px;
+    }
+}

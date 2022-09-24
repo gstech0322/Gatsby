@@ -1,0 +1,101 @@
+.termpage {
+    padding-top: 99px;
+
+    + .section-subscribe {
+        display: none;
+    }
+
+    .heading-lg {
+        margin-bottom: 80px;
+
+        text-align: center;
+        color: $indigo;
+    }
+
+    .text-sm {
+        margin-bottom: 16px;
+
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .heading-sm {
+        margin-bottom: 27px;
+
+        color: $indigo;
+    }
+
+    .term-wrapper {
+        padding-left: 103px;
+        margin-bottom: 63px;
+    }
+
+    ul {
+        margin-bottom: 27px;
+        padding-left: 95px;
+        
+        list-style: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 12px;
+
+        &:before {
+            content: '';
+
+            position: absolute;
+            top: 11px;
+            left: -15px;
+
+            width: 4px;
+            height: 4px;
+
+            border-radius: 100%;
+            background-color: $black-pearl;
+        }
+    }
+
+    @include respond-to(lg) {
+        .term-wrapper {
+            padding-right: 100px;
+        }
+    }
+
+    @include respond-to(md) {
+        .term-wrapper {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+
+    @include respond-to(sm-down) {
+        padding-top: 60px;
+
+        .heading-lg {
+            margin-bottom: 37px;
+
+            font-size: 30px;
+        }
+
+        .heading-sm {
+            margin-bottom: 20px;
+        }
+
+        .term-wrapper {
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        .text-sm,
+        ul {
+            font-size: 16px;
+        }
+
+        ul {
+            padding-left: 40px;
+        }
+    }
+}

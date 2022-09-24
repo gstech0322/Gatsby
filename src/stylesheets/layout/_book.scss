@@ -1,0 +1,90 @@
+.book {
+  height: 100%;
+  width: 291px;
+
+  background: white;
+  filter: drop-shadow(0px 2px 28px rgba(51, 51, 61, 0.1));
+
+  .custom-row {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    &:nth-child(2) {
+      margin-top: 16px;
+    }
+  }
+  
+  .custom-col {
+    width: 50%;
+  }
+  
+  .right-col {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    text-align: right;
+  }  
+
+  h3 {
+    font-size: 30px;
+    color: $strawberry;
+    line-height: 1;
+  }
+
+  h4 {
+    font-size: 14px;
+    color: $jackson-purple;
+  }
+
+  .book-illustration {
+    width: 100%;
+  }
+  
+  .book-details {
+    padding: 5px 14px 11px;
+
+    background: $white;
+  }
+
+  .number-words-phrases {
+    font-size: 7px;
+    width: 52px;
+  }
+
+  .book-logo {
+    width: 56px;
+  }
+}
+
+@include respond-to(md-down) {
+  .book {
+    width: 154px;
+
+    .book-details {
+      padding: 0 14px 21px;
+    }
+
+    .book-logo {
+      width: 32px;
+    }
+    
+    .number-words-phrases {
+      font-size: 4px;
+      width: 28px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    h4 {
+      font-size: 7px;
+    }
+
+    .custom-row:nth-child(2) {
+      margin-top: -5px;
+    }
+  }
+}

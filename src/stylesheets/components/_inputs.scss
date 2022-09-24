@@ -1,0 +1,68 @@
+.input-field {
+    width: 425px;
+    height: 54px;
+    padding: 0 26px;
+
+    color: $flower-blue;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+
+    background: $white;
+    border: 1.27206px solid #E2E2EF;
+
+
+    @include placeholder {
+        color: #A5A5B7;
+    }
+
+    @include on-event {
+        border: 1px solid #C5C5E8;
+    }
+}
+
+label {
+    font-size: 0;
+}
+
+input:-internal-autofill-selected {
+    background-color: $white !important;
+}
+
+.input-search {
+    display: flex;
+    align-items: center;
+
+    .input-field {
+        border: none;
+    }
+}
+
+.contact-us {
+    width: 60%;
+    margin: 0 auto 150px;
+
+    label {
+        display: block;
+    }
+
+    .input-field {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        resize: none;
+        height: 200px;
+        padding-top: 20px;
+    }
+
+    .btn-green {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    @include respond-to(sm-down) {
+        width: 100%;
+    }
+}

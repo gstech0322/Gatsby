@@ -1,0 +1,140 @@
+.banner {
+    &-layout {
+        overflow: hidden;
+        padding-bottom: 41px;
+
+        background-image: url('../images/banner-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+
+        .text-md,
+        .heading-lg,
+        .heading-md {
+            color: $white;
+        }
+
+        .heading-lg--light {
+            margin-top: 4px;
+            margin-bottom: 36px;
+
+            font-weight: 100;
+        }
+
+        .text-md {
+            padding-right: 98px;
+            margin-bottom: 16px;
+        }
+
+        .heading-md {
+            margin-top: 83px;
+
+            text-align: center;
+        }
+    }
+
+    &-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-content {
+        width: 49%;
+
+        &:first-child {
+            padding-top: 193px;
+        }
+
+        &:nth-child(2) {
+            position: relative;
+            left: 75px;
+
+            padding-top: 70px;
+        }
+
+        &:last-child {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1590px) and (min-width: 1200px) {
+        &-layout {
+            background-size: auto;
+        }
+    }
+
+    @media screen and (max-width: 1400px) and (min-width: 1200px) {
+        &-content {
+            &:nth-child(2) {
+                left: 35px;
+            }
+        }
+    }
+
+    @include respond-to(lg) {
+        &-content {
+            &:nth-child(2) {
+                left: 35px;
+            }
+        }
+    }
+
+    @include respond-to(md) {
+        &-content {
+            &:first-child {
+                padding-top: 120px;
+            }
+
+            &:nth-child(2) {
+                left: 19px;
+            }
+        }
+
+        &-layout {
+            .heading-lg {
+                margin-bottom: 20px;
+
+                &--light {
+                    margin-bottom: 36px;
+                }
+            }
+
+            .heading-md {
+                margin-top: 60px;
+            }
+
+            .text-md {
+                padding-right: 60px;
+            }
+        }
+    }
+
+    @include respond-to(sm-down) {
+        &-layout {
+            .heading-lg--light {
+                margin-bottom: 22px;
+            }
+
+            .text-md {
+                padding-right: 22px;
+            }
+
+            .heading-md {
+                margin-top: 0;
+            }
+        }
+
+        &-content {
+            width: 100%;
+
+            &:first-child {
+                padding-top: 60px;
+            }
+
+            &:nth-child(2) {
+                left: 0;
+                padding-top: 0;
+            }
+        }
+    }
+}

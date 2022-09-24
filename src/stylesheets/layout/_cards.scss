@@ -1,0 +1,130 @@
+.card-layout {
+    padding: 30px 15px;
+    width: 600px;
+    max-width: 100%;
+    
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        color: #100226;
+    }
+
+    .time {
+        margin-bottom: 4px;
+        opacity: 0.2;
+        
+        font-size: 12px;
+    }
+
+    .card-video {
+        position: absolute;
+        top: 59px;
+        right: -76px;
+
+        display: flex;
+        align-items: center;
+        padding: 19px 18px;
+
+        background-color: $white;
+        border-radius: 8px;
+
+        img {
+            width: 17px;
+            margin-right: 8px;
+        }
+
+        p {
+            width: 170px;
+            overflow: hidden;
+            
+            color: #000;
+            font-size: 12px;
+            font-weight: bold;
+
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .card-item {
+        position: relative;
+
+        padding: 16px 30px;
+        margin-bottom: 24px;
+        max-width: 300px;
+        opacity: 0;
+        
+        animation: fadeInUp 1s ease-in-out 0s forwards;
+
+        background-color: $white;
+        border-left: 8px solid $strawberry;
+        border-radius: 8px;
+
+
+        &:nth-child(odd) {
+            border-color: $yellow;
+        }
+
+        &:nth-child(even) {
+            margin-left: auto;
+        }
+
+        &:nth-child(1) {
+            animation-delay: .3s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: .6s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: .9s;
+        }
+
+        &:nth-child(4) {
+            animation-delay: 1.2s;
+        }
+    }
+
+    .card-embedded-file {
+        margin-bottom: 60px;
+    }
+
+    @include respond-to(md) {
+        zoom: 0.8;
+    }
+
+    @include respond-to(sm-down) {
+        padding: 30px 0;
+        width: 345px;
+        margin: auto;
+
+        .card-item {
+            padding: 16px 15px;
+            width: 260px;
+        }
+
+        .card-video {
+            top: 91px;
+            right: -19px;
+        }
+
+        .card-embedded-file {
+            margin-bottom: 70px;
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    from { 
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+}

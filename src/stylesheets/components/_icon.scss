@@ -1,0 +1,88 @@
+.icon-item {
+    cursor: pointer;
+
+    svg {
+        width: 70px;
+        height: 70px;
+    }
+    
+    path {
+        stroke: $indigo;
+
+        transition: all .3s ease;
+    }
+
+    &__watsapp {
+        path:nth-child(2) {
+            fill: $indigo;
+        }
+    }
+
+    @include on-event {
+        path {
+            stroke: $strawberry;
+
+            &:not(:first-child){
+                fill: $strawberry;
+            }
+        }
+    }
+
+    &__play--sm {
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__facebook--sm,
+    &__ig--sm,
+    &__twitter--sm,
+    &__search--sm {
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+        
+        path {
+            fill: $indigo;
+            stroke: none;
+        }
+
+        @include on-event {
+            path {
+                fill: $strawberry;
+                stroke: none;
+            }
+        }
+    }
+
+    &.path-white {
+        path {
+            stroke: $white;
+
+            &:not(:first-child) {
+                fill: $white;
+            }
+        }
+
+        @include on-event {
+            path {
+                stroke: $strawberry;
+    
+                &:not(:first-child){
+                    fill: $strawberry;
+                }
+            }
+        }
+    }
+}
+
+.icon-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    width: 420px;
+    max-width: 100%;
+}

@@ -1,0 +1,89 @@
+.book-availability-layout {
+    padding-top: 158px;
+    padding-bottom: 40px;
+    overflow: hidden;
+
+    .heading-md {
+        width: 582px;
+        max-width: 100%;
+
+        color: $indigo;
+    }
+
+    .book-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 69px;
+        padding-top: 102px;
+        padding-right: 69px;
+    }
+
+    .book {
+        position: relative;
+        top: -20px;
+
+        zoom: 1.1;
+
+        &:nth-child(2) {
+            top: -25px;
+            zoom: 1.3;
+        }
+    }
+
+    @include respond-to(lg) {
+        .book {
+            zoom: unset;
+            width: 271px;
+
+            &:nth-child(2) {
+                zoom: unset;
+                width: 328px;
+            }
+        }
+
+        .book-wrapper {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    @include respond-to(md) {
+        .book-wrapper {
+            margin: 0 auto;
+        }
+    }
+
+    @include respond-to(md-down) {
+        .book {
+            zoom: unset;
+            width: 230px;
+            margin-bottom: 40px;
+
+            &:nth-child(2) {
+                top: -20px;
+                zoom: unset;
+            }
+        }
+
+        .book-overflow-sm {
+            overflow: scroll;
+        }
+
+        .book-wrapper {
+            width: 730px;
+            justify-content: space-between;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    @include respond-to(sm-down) {
+        padding-top: 71px;
+        padding-bottom: 0;
+
+        .book-wrapper {
+            padding-top: 71px;
+        }
+    }
+}

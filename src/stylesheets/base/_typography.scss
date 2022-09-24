@@ -1,0 +1,67 @@
+// @import "~@openfonts/noto-sans-jp_japanese/index.css";
+
+body,
+.text-lg {
+  color: $rock;
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+}
+
+.heading-lg {
+  font-size: 40px;
+  font-weight: 700;
+
+  @include respond-to(md) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @include respond-to(sm-down) {
+    font-size: 32px;
+    line-height: 51px;
+  }
+}
+
+.heading-md {
+  font-size: 38px;
+  font-weight: 500;
+
+  @include respond-to(md) {
+    font-size: 23px;
+  }
+
+  @include respond-to(sm-down) {
+    font-size: 30px;
+  }
+}
+
+.heading-sm {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.text-md {
+  font-size: 16px;
+  font-weight: 400;
+
+  @include respond-to(sm-down) {
+    font-weight: 300;
+  }
+}
+
+.text-sm {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.text-xs {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.text-thin {
+  font-size: 16px;
+  font-weight: 300;
+}
+

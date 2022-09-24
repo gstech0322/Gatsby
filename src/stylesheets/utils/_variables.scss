@@ -1,0 +1,56 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// $font-notosan-black: 'Noto San Black';
+// $font-notosan-bold: 'Noto San Bold';
+// $font-notosan-light: 'Noto San Light';
+// $font-notosan-medium: 'Noto San Medium';
+// $font-notosan-regular: 'Noto San Regular';
+// $font-notosan-thin: 'Noto San Thin';
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #E50050 !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;
+
+// Other Variables
+
+$white: #ffffff;
+$black: #000000;
+$black-pearl: #050523;
+$gulf-blue: #0D0458;
+$jackson-purple: #2E2389;
+$royal-blue: #6A47F6;
+$strawberry: #FF4095;
+$rose: #FF9CF1;
+$blue-haze: #C9C9DD;
+$green-haze: #00A050;
+$yellow: #FFC91F;
+$indigo: #210945;
+$rock: #323643;
+$light-green: #29A96B;
+$mid-green: #008947;
+$flower-blue: #323250;
+$gray: #666678;
+$light-gray: #f5f5fa;
+$light-violet: #625b93;

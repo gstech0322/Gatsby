@@ -1,0 +1,47 @@
+.homepage {
+  .banner-layout {
+    .icon-wrapper {
+      margin: 75px auto;
+      width: 841px;
+  
+      svg {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .phrasebook-layout .icon-wrapper svg {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  @include respond-to(md) {
+    .banner-layout {
+      .icon-wrapper {
+        margin: 40px auto 0;
+        width: 460px;
+
+        svg {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  @include respond-to(sm-down) {
+    .banner-layout {
+      .icon-wrapper {
+        margin: 27px auto 16px;
+
+        svg {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}

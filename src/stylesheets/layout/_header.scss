@@ -1,0 +1,92 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    z-index: 3;
+
+    background-color: $white;
+    box-shadow: 0px 2px 28px rgba(51, 51, 61, 0.1);
+
+    picture img {
+        position: relative !important;
+    }
+
+    .img-logo {
+        position: relative;
+        top: -10px;
+    }
+
+    .header--flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    form {
+        position: relative;
+        margin-right: 50px;
+        opacity: 0.8;
+
+        transition: all .3s;
+
+        @include on-event {
+            opacity: 1;
+        }
+    }
+
+    .input-field {
+        padding-left: 0;
+        color: #363941;
+
+        @include placeholder {
+            color: #363941;
+        }
+    }
+
+    @include respond-to(md-down) {
+        form {
+            margin-right: 0;
+        }
+    }
+
+    @include respond-to(sm-down) {
+        padding-top: 6px;
+        padding-bottom: 4px;
+
+        .img-logo {
+            width: 104px;
+        }
+
+        .mobile-hover-trigger {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 54px;
+        }
+
+        .input-field {
+            width: 0;
+            padding-right: 0;
+
+            transition: all .3s;
+
+            @include placeholder {
+                opacity: 0;
+            }
+        }
+
+        form {
+            @include on-event {
+                .input-field {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

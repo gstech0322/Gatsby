@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+// Configuration and helpers
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
+// Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography';
+
+// Layout-related sections
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/book',
+  'layout/banner',
+  'layout/phrasebook',
+  'layout/cards',
+  'layout/subscribe',
+  'layout/product',
+  'layout/searchAlgolia',
+  'layout/availability';
+
+// Components
+@import
+  'components/buttons',
+  'components/icon',
+  'components/inputs';
+
+// Page-specific styles
+@import
+  'pages/home',
+  'pages/terms',
+  'pages/contact';

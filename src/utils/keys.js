@@ -1,0 +1,8 @@
+const config = {
+    GATSBY_ALGOLIA_APP_ID: `EO7ZPSONZN`,
+    GATSBY_ALGOLIA_SEARCH_KEY: `b66a683958ffd5191f8bffc76ff26e82`,
+    GATSBY_ALGOLIA_ADMIN_KEY: `50fcddebf94958c265a8075484797a83`,
+    GATSBY_ALGOLIA_INDEX_NAME: `Pages`
+}
+
+module.exports = config;
